@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drawback of bonsai</title>
+	<style>
+				#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+	 	#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left:20px;
+}
+.logo{
+	   margin-top: -30px;
+    margin-bottom: -30px;
+
+}
+.space{
+    padding: 300px;
+    padding-top: 10px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color: #1a1a1a;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color:#465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .follow i:hover, footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 2000px;
+    text-align: center;
+}
+	</style>
+</head>
+<body>
+	 <section id="header">
+        <a href="#"><img src="img/logo.jpg " height="120" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="products.html">Products</a></li>
+                <li> <a href="blog.html">Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="research.html">Research</a></li>
+                <li> <a href="login.html">Log In</a></li>
+            </ul>
+        </div>
+    </section>
+	<div class="space">
+        <h1>Drawback of bonsai</h1>
+		<p>
+      Is bonsai good for the home? Unfortunately, when it comes to vastu, the bonsai plant is a bad addition to your home decor. Although they are beautiful to look at, these plants are not particularly auspicious.
+      <br>
+
+Bonsai vastu experts say that it is best to avoid placing this plant anywhere at home. It symbolises slow or stunted growth and might interfere with the lifecycle of the inhabitants. These vastu plants need a more open space like the garden or a verandah.      
+        </p>
+	</div>
+
+	<br>
+	 <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.jpg" alt="" height="120">
+            <h4>Contact</h4>
+        
+            <p><strong>Address:</strong> Pokhara, Nepal</p>
+            <p><strong>Phone:</strong> +977 9829174533/ +977 9847730555</p>
+            <p><strong>Email:</strong> bonsaijourney@gmail.com</p>
+            <p><strong>Hours:</strong> 09:00AM - 09:00PM, Sun - Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                   <a href="https://www.facebook.com/profile.php?id=100085433096061" target="_blank"> <i class="fa-brands fa-facebook-square"></i></a>
+                   <a href="https://www.instagram.com/rachit__shrestha/" target="_blank">  <i class="fa-brands fa-pinterest"></i></a>
+                   <a href="https://www.instagram.com/achyut_tamang_/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.instagram.com/raj_ghale_/" target="_blank">  <i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Quick Links</h4>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About us</a>
+            <a href="login.html">Log In</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>Coming Soon</p>
+        </div>
+        <div class="copyright">
+            <p class="size">	©2023 , Achyut, Roshan, Rachit, Raj</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

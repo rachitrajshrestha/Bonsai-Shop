@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="img/logo.jpg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonsai Journey</title>
+    <link rel="stylesheet" href="CSS/log.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+    
+    <body>
+        <section id="header">
+            <a href="#"><img src="img/logo.jpg" height="120" class="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="products.html">Products</a></li>
+                    <li> <a href="blog.html">Blog</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <!-- <li> <a href="research.html">Research</a></li> -->
+                    <li> <a class="active" href="loginPage.html">Log In</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- login Form and Validation -->
+    <div class="login-form">
+    <div class="login">
+         
+        <h1>login</h1>
+        <div id="error_message"></div>
+        <form id="login" onsubmit="return validate();">
+            <div class="input-field">
+                <input type="text" class="input-box" placeholder="Email or Username" id="name">
+            </div>
+            <div class="input-field">
+                <input type="text" class="input-box" placeholder="Password" id="password">
+            </div>
+            <div class="input-field">
+                <input type="submit" id="sign-btn"/>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a herf="#">Forgot Password?</a></label>
+                </div>
+            </div> 
+            <br><br>
+            <div class="bottom-down">
+                <a href="signup.html">Create new account?</a>
+            </div>
+            <div class="bottom-down">
+                <a href="index.html">Skip, sign in later</a>
+            </div>
+            
+        </form>
+        <!-- Validation JavaScript -->
+        <script>
+                function validate(){
+                var name = document.getElementById("name").value;
+                var password = document.getElementById("password").value;
+                var error_message = document.getElementById("error_message");
+                
+                error_message.style.padding = "10px";
+
+                var text;
+                if(name.length < 5){
+                    text = "Please Enter valid Name";
+                    error_message.innerHTML = text;
+                    return false;
+                }
+                if(password.length < 8){
+                    text = "Please Enter valid password";
+                    error_message.innerHTML = text;
+                    return false;
+                }
+                alert("Form Submitted Successfully!");
+                return true;
+                }
+        </script>
+   
+
+    </body>
+</html>
